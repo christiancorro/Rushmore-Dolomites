@@ -97,7 +97,7 @@ function Start() {
     heightmap = new Image();
     heightmap.data = [];
     // load img source
-    heightmap.src = "/img/heightmaps/heightmap7.png";
+    heightmap.src = "/img/heightmaps/heightmap2.png";
     heightmap.onload = function () {
         console.log("[" + ++logCount + "/" + logTotal + "] Heightmap caricata (" + heightmap.width + "x" + heightmap.height + ")");
         //get height data from img

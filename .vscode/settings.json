@@ -3,5 +3,6 @@
         "Voxel",
         "gltf",
         "heightmap"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
