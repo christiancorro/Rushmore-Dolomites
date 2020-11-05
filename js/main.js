@@ -45,7 +45,7 @@ function Start() {
 
     // camera.position.set(distance * 30, distance * 20, distance * 20);
     // camera.position.set(-5, 50, 80);
-    camera.position.set(0, 80, 0);
+    camera.position.set(-40, 80, 80);
     camera.lookAt(new THREE.Vector3(0, 0, 0));
 
     var geometry = new THREE.PlaneBufferGeometry(80, 80, 32, 32);
@@ -72,16 +72,28 @@ function Start() {
             fileSelector.click();
         }
     };
-    // fileSelector.addEventListener('change', (event) => {
-    //     heightmap = new Image();
-    //     heightmap.src = URL.createObjectURL(event.target.files[0]);
-    //     console.log(heightmap);
-    //     console.log(event.target.files[0]);
-    //     heightmap.data = getHeightData(heightmap, 0.2);
-    //     scene.children.length = 0;
-    //     generaTerreno(heightmap);
-    //     scene.add(world);
-    // });
+    fileSelector.addEventListener('change', (event) => {
+        // console.log(event);
+        var reader = new FileReader();
+        reader.onload = function () {
+            heightmap = new Image();
+            heightmap.onload = function () {
+                logCount = 0;
+                console.clear();
+                console.log("[" + ++logCount + "/" + logTotal + "] Heightmap caricata (" + heightmap.width + "x" + heightmap.height + ")");
+                //get height data from img
+                heightmap.data = getHeightData(heightmap, 0.2);
+
+                world.children.length = 0;
+                // console.log(heightmap);
+                generaTerreno(heightmap);
+                scene.add(world);
+            }
+
+            heightmap.src = reader.result;
+        }
+        reader.readAsDataURL(event.target.files[0]);
+    });
 
     // GUI
     gui = new dat.GUI();
@@ -102,7 +114,10 @@ function Start() {
         console.log("[" + ++logCount + "/" + logTotal + "] Heightmap caricata (" + heightmap.width + "x" + heightmap.height + ")");
         //get height data from img
         heightmap.data = getHeightData(heightmap, 0.2);
+        // console.log(heightmap);
         generaTerreno(heightmap);
+        scene.children.length = 0;
+        scene.add(world);
     }
 }
 
