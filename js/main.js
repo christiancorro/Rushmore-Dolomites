@@ -65,23 +65,23 @@ function Start() {
 
     // Axes
     var axesHelper = new THREE.AxesHelper(5);
-    // scene.add(axesHelper);
+    scene.add(axesHelper);
 
     let params = {
         loadFile: function () {
             fileSelector.click();
         }
     };
-    fileSelector.addEventListener('change', (event) => {
-        heightmap = new Image();
-        heightmap.src = URL.createObjectURL(event.target.files[0]);
-        console.log(heightmap);
-        console.log(event.target.files[0]);
-        heightmap.data = getHeightData(heightmap, 0.2);
-        scene.children.length = 0;
-        generaTerreno(heightmap);
-        scene.add(world);
-    });
+    // fileSelector.addEventListener('change', (event) => {
+    //     heightmap = new Image();
+    //     heightmap.src = URL.createObjectURL(event.target.files[0]);
+    //     console.log(heightmap);
+    //     console.log(event.target.files[0]);
+    //     heightmap.data = getHeightData(heightmap, 0.2);
+    //     scene.children.length = 0;
+    //     generaTerreno(heightmap);
+    //     scene.add(world);
+    // });
 
     // GUI
     gui = new dat.GUI();
@@ -97,7 +97,7 @@ function Start() {
     heightmap = new Image();
     heightmap.data = [];
     // load img source
-    heightmap.src = "/img/heightmaps/heightmap2.png";
+    heightmap.src = "img/heightmaps/heightmap2.png";
     heightmap.onload = function () {
         console.log("[" + ++logCount + "/" + logTotal + "] Heightmap caricata (" + heightmap.width + "x" + heightmap.height + ")");
         //get height data from img
