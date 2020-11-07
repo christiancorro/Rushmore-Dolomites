@@ -166,11 +166,11 @@ function Start() {
 
     gui.add(params, 'heightmap', {
         HeightmapDefault: '/img/heightmaps/heightmapDefault.png',
-        Heightmap1: '/img/heightmaps/heightmap1.png',
-        Heightmap2: '/img/heightmaps/heightmap2.png',
-        Heightmap3: '/img/heightmaps/heightmap3.png',
-        Heightmap4: '/img/heightmaps/heightmap4.png',
-        Heightmap5: '/img/heightmaps/heightmap5.png'
+        Heightmap1: 'img/heightmaps/heightmap1.png',
+        Heightmap2: 'img/heightmaps/heightmap2.png',
+        Heightmap3: 'img/heightmaps/heightmap3.png',
+        Heightmap4: 'img/heightmaps/heightmap4.png',
+        Heightmap5: 'img/heightmaps/heightmap5.png'
     }).onChange(generateWorldFromImage);
 
     gui.add(params, 'loadFile').name("Load heightmap");
