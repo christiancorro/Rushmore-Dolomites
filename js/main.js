@@ -81,7 +81,7 @@ function Start() {
         loadFile: function () {
             fileSelector.click();
         },
-        heightmap: 'img/heightmaps/heightmapDefault.png',
+        heightmap: 'img/heightmaps/defaultHeightmap.png',
         download_GLTF: exportGLTF
     };
 
@@ -165,7 +165,7 @@ function Start() {
     folderWater.open();
 
     gui.add(params, 'heightmap', {
-        HeightmapDefault: 'img/heightmaps/heightmapDefault.png',
+        defaultHeightmap: 'img/heightmaps/defaultHeightmap.png',
         Heightmap1: 'img/heightmaps/heightmap1.png',
         Heightmap2: 'img/heightmaps/heightmap2.png',
         Heightmap3: 'img/heightmaps/heightmap3.png',
