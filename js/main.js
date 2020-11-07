@@ -81,7 +81,7 @@ function Start() {
         loadFile: function () {
             fileSelector.click();
         },
-        heightmap: '../img/heightmaps/heightmapDefault.png',
+        heightmap: 'img/heightmaps/heightmapDefault.png',
         download_GLTF: exportGLTF
     };
 
