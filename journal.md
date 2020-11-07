@@ -62,14 +62,21 @@ L'idea 1, forse, mi aggrada di più.
 **Idea di soluzione**: mescolare i colori della webcam con i colori del materiale. Bah
 * **Da fare**: 
     - [ ] costruire le nuvole
+    - [ ] costruire alberi
     - [ ] costruire gli uccelli (caricare da oggetti?)
 
 ## 7 novembre 2020
 * **Fatto**:
-    - [x] generazione automatica delle nuvole
-    - [ ] generazione automatica degli uccelli
+    - [x] generazione automatica/animazione delle nuvole 
+    - [x] generazione automatica/animazione degli alberi
+    - [x] upload file heightmap
+    
 * **Idea**: 
-    * aggiungere animazione onde all'acqua
     * merge della funzionalità per fare l'upload della heightmap
 * Heightmaps trovate [qui](https://forums.newtek.com/showthread.php/152437-Terrain-party-free-website-to-extract-heightmaps?p)
-* **Da fare**: urge un profondo refactoring
+* **Risultati**:
+    ![Terreno con texture](img/journal-images/testCloudsTrees.gif)
+* **Da fare**: 
+    - [ ] urge un profondo refactoring
+    - [ ] generazione automatica degli uccelli
+    - [ ] individuare migliore zona rocciosa per webcam
