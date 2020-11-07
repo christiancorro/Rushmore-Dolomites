@@ -72,3 +72,4 @@ L'idea 1, forse, mi aggrada di più.
     * aggiungere animazione onde all'acqua
     * merge della funzionalità per fare l'upload della heightmap
 * Heightmaps trovate [qui](https://forums.newtek.com/showthread.php/152437-Terrain-party-free-website-to-extract-heightmaps?p)
+* **Da fare**: urge un profondo refactoring
