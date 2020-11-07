@@ -10,11 +10,19 @@ canvas {
     height: 100%;
 }
 
+.grayscale {
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    -ms-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+#testImg {
+    position: fixed;
+    /* width: 10%; */
+}
+
 input {
-    font-family: monospace;
-    font-size: 30pt;
-    bottom: 0;
-    position: absolute;
-    width: 100%;
-    background-color: transparent;
+    display: none;
 }

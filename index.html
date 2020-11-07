@@ -5,14 +5,18 @@
     <meta name="theme-color" content="#000000">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/icons/icon.png">
-    <script src="js/lib/three.js"></script>
-    <script src="js/lib/stats.min.js"></script>
-    <script src="js/lib/OrbitControls.js"></script>
-    <script src="js/lib/dat.gui.min.js"></script>
+    <script type='text/javascript' src="js/lib/three.js"></script>
+    <script type='text/javascript' src="js/lib/stats.min.js"></script>
+    <script type='text/javascript' src="js/lib/OrbitControls.js"></script>
+    <script type='text/javascript' src="js/lib/dat.gui.min.js"></script>
+    <script type='text/javascript' src="js/lib/tween.js"></script>
+    <script type='text/javascript' src="js/lib/GLTFExporter.js"></script>
+    <script type='text/javascript' src="js/lib/GLTFLoader.js"></script>
 </head>
 
 <body>
-    <input type="file" id="myInput" accept="image/x-png">
+    <img src="img/heightmaps/heightmap1.png" alt="" style="position: fixed; bottom: 0;" id="testImg" class="grayscale">
+    <input type="file" id="myInput" accept=".png, .jpg, .jpeg" visibility="hidden">
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 
