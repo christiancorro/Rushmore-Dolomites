@@ -23,6 +23,6 @@ canvas {
     /* width: 10%; */
 }
 
-input {
+input[type="file"] {
     display: none;
 }
