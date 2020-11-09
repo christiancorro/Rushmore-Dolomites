@@ -91,7 +91,7 @@ L'idea 1, forse, mi aggrada di più.
     - [x] refactoring
     
 * **Risultati**:
-        ![Terreno con texture](img/journal-images/test-levels.gif)
+        
 
-* ** Da fare**:
+* **Da fare**:
     - [ ] animazione del terreno con webcam
